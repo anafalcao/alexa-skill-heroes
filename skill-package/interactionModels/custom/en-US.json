@@ -1,0 +1,88 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "hero information",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "GetPublisherIntent",
+          "slots": [
+            {
+              "name": "hero",
+              "type": "Hero"
+            }
+          ],
+          "samples": [
+            "Where's {hero} from",
+            "What's {hero} publish company"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "captain america",
+                "synonyms": [
+                  "steve rodgers",
+                  "american hero",
+                  "captain america",
+                  "capitain",
+                  "capitão"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "iron man",
+                "synonyms": [
+                  "iron man",
+                  "tony",
+                  "tony stark"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "superman",
+                "synonyms": [
+                  "clark kent",
+                  "super homem",
+                  "man of steel"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "batman",
+                "synonyms": [
+                  "bat",
+                  "gotham guy",
+                  "bruce wayne"
+                ]
+              }
+            }
+          ],
+          "name": "Hero"
+        }
+      ]
+    }
+  },
+  "version": "4"
+}
